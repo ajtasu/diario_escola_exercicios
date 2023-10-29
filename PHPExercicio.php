@@ -42,7 +42,6 @@ function compararDatas($objeto1, $objeto2) {
     return ($data1 < $data2) ? -1 : 1;
 }
 
-
 usort($arrayDeClientes, 'compararDatas');
 
 echo '<br><br> A ordenação pela data de nacimento do mais velho ao mais novo do Cliente mais o Novo (NAO FOI ESPECIFICADO NO REQUERIMENTO MAS POR DEFEIO DEIXE ASSIM) : <br>';
