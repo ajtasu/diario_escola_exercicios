@@ -45,22 +45,6 @@ join Aluno as Al on Al.id = Pr.idAluno
 join Responsavel as Rs on Rs.id = Pr.idResponsavel;
 
 --Mostra ponto 2
-SELECT
-    al.nome AS nome_aluno,
-    r1.nome AS responsavel1,
-    pr1.parentesco as P1,
-    r2.nome AS responsavel2,
-    pr2.parentesco as P2
-FROM Aluno al
-LEFT JOIN Parentesco pr1 ON al.id = pr1.idAluno AND pr1.parentesco = 'Pai'
-LEFT JOIN Responsavel r1 ON pr1.idResponsavel = r1.id
-LEFT JOIN Parentesco pr2 ON al.id = pr2.idAluno AND pr2.parentesco = 'Mae'
-LEFT JOIN Responsavel r2 ON pr2.idResponsavel = r2.id;
-
-SELECT Al.nome as Aluno, Rs.nome as Responsavel_1, Pr.parentesco as Parentesco
-FROM Parentesco as Pr
-join Aluno as Al on Al.id = Pr.idAluno 
-join Responsavel as Rs on Rs.id = Pr.idResponsavel;
 
 SELECT
     al.nome AS nome_aluno,
