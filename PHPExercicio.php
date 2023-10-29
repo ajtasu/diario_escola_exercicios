@@ -49,6 +49,6 @@ foreach($arrayDeClientes as $element){
     echo '<br>'.$element->nome.'  nascido em '.$element->data_nacimento;   
 }
 
-
+//Executar todo o codigo para responder as pergunta do exercicio.
 
 ?>
