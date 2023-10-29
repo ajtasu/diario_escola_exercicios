@@ -1,4 +1,8 @@
-var clientes = [
+//Percorra o objeto clientes e mostre o nome da cada cliente da seguinte maneira: “ultimoSobrenome, primeiroNome”;
+//Resposta 2
+//Executar o codigo de inicio ao fim
+
+var clientes = [//INICIO
     {
         "id": 1,
         "nome": "Luis Santos Silveira",
@@ -29,7 +33,7 @@ function printNome(clientes, numero='') {
         array_nome = array_nome.reverse();
         novo_nome ='';
         novo_nome = array_nome.join(' ');
-
+        console.info('Ordem dos nomes: ultimoSobrenome, primeiroNome');
         console.log(novo_nome);
 
         });
@@ -53,7 +57,7 @@ function printNome(clientes, numero='') {
         console.info('Não tem numero para formatar...')
     }
 }
-
+//FIM
 
 
 
